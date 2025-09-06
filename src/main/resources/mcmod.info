@@ -1,0 +1,18 @@
+[
+  {
+    "modid": "${mod_id}",
+    "name": "[Fiarr4ik] OceanBlock",
+    "description": "TODO",
+    "version": "${mod_version}",
+    "mcversion": "${minecraft_version}",
+    "url": "",
+    "updateUrl": "",
+    "authorList": [
+      "${mod_author}"
+    ],
+    "credits": "Fiarr4ik",
+    "logoFile": "",
+    "screenshots": [],
+    "dependencies": []
+  }
+]
