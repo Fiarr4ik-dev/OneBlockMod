@@ -7,8 +7,6 @@ import net.minecraft.world.World;
 import ru.fiarr4ik.ocean_block.Fiarr4ikOneBlock;
 import ru.fiarr4ik.ocean_block.tile.OneBlockGeneratorTile;
 
-import java.util.Random;
-
 public class OneBlockGenerator extends Block {
 
     protected OneBlockGenerator() {

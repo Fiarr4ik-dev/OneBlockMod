@@ -34,4 +34,5 @@ public class Fiarr4ikOneBlock {
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
     }
+
 }

@@ -18,4 +18,5 @@ public class ModBlocks {
 
         GameRegistry.registerTileEntity(OneBlockGeneratorTile.class, Fiarr4ikOneBlock.MOD_ID + ":one_block_generator");
     }
+
 }
