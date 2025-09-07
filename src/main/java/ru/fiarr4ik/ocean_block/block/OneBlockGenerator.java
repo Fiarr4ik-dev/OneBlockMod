@@ -9,11 +9,13 @@ import ru.fiarr4ik.ocean_block.tile.OneBlockGeneratorTile;
 
 public class OneBlockGenerator extends Block {
 
-    protected OneBlockGenerator() {
+    private final String type;
+
+    protected OneBlockGenerator(String name, String type) {
         super(Material.iron);
-        String name = Fiarr4ikOneBlock.MOD_ID + ":one_block_generator";
         setBlockName(name);
-        setBlockTextureName("one_block_generator");
+        setBlockTextureName(Fiarr4ikOneBlock.MOD_ID + ":" + name);
+        this.type = type;
     }
 
     @Override
@@ -23,7 +25,7 @@ public class OneBlockGenerator extends Block {
 
     @Override
     public TileEntity createTileEntity(World world, int metadata) {
-        return new OneBlockGeneratorTile();
+        return new OneBlockGeneratorTile(type);
     }
 
 }
