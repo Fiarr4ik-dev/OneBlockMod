@@ -7,6 +7,9 @@ import net.minecraft.world.World;
 import ru.fiarr4ik.ocean_block.Fiarr4ikOneBlock;
 import ru.fiarr4ik.ocean_block.tile.OneBlockGeneratorTile;
 
+/**
+ * Класс блока, который является сущностью {@link OneBlockGeneratorTile}.
+ */
 public class OneBlockGenerator extends Block {
 
     private final String type;

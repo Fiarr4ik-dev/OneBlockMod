@@ -6,6 +6,9 @@ import ru.fiarr4ik.ocean_block.dto.BlockChance;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Класс, который нужен чтобы статически вернуть {@link List<BlockChance>}.
+ */
 public class OneBlockLoader {
 
     public static List<BlockChance> returnOneBlockType(String type) {

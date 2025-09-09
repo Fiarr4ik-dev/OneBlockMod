@@ -9,6 +9,9 @@ import ru.fiarr4ik.ocean_block.dto.BlockChance;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * Класс, который определяет сущность ванблока.
+ */
 public class OneBlockGeneratorTile extends TileEntity {
 
     private static final Random RANDOM = new Random();
@@ -19,6 +22,9 @@ public class OneBlockGeneratorTile extends TileEntity {
         this.type = type;
     }
 
+    /**
+     * Метод, вызываемый каждый тик и ставящий блок сверху себя.
+     */
     @Override
     public void updateEntity() {
         if (worldObj == null || worldObj.isRemote) return;
@@ -30,6 +36,10 @@ public class OneBlockGeneratorTile extends TileEntity {
         }
     }
 
+    /**
+     * В зависимости от типа ванблока вернётся блок со своим шансом.
+     * @return блок в зависимости от типа ванблока.
+     */
     private Block getBlockToSpawn() {
         List<BlockChance> blocks = OneBlockLoader.returnOneBlockType(type);
         if (blocks == null || blocks.isEmpty()) return net.minecraft.init.Blocks.stone;
